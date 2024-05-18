@@ -12,7 +12,7 @@ fn main() {
         _ => panic!("Wrong arguments: {args:?}, expected 1 for path got {}",
         args.len() - 1)
     };
-    let (meta, map) = filereader::filereader::load_map_data_from_file(path);
+    let (meta, map) = filereader::load_map_data_from_file(path);
     println!("Rover Map: {map:?}");
     println!("-------------------------");
     println!("Rover Metadata: {meta:?}");
